@@ -38,8 +38,8 @@ function drawImage() {
   function coreLoop() {
     for (let y = 0; y < pixelData.height; y++) {
       for (let x = 0; x < pixelData.width; x++) {
-        let index = (x + y * canvas.width) * 4;
-        let pixel = pixelData.data[index+2];
+        const index = (x + y * canvas.width) * 4;
+        const pixel = pixelData.data[index+2];
 
         const left = pixelData.data[index - 4];
         const right = pixelData.data[index + 2];
